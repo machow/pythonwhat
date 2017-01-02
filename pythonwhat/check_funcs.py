@@ -105,7 +105,7 @@ def has_part(name, msg, state=None, fmt_kwargs=None):
 
     try: 
         part = state.student_parts[name]
-        if part is None: raise KeyError
+        if part is None or part == []: raise KeyError
     except (KeyError, IndexError):
         _msg = state.build_message(msg, d)
         rep.do_test(Test(Feedback(_msg, state.highlight)))

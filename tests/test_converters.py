@@ -53,6 +53,25 @@ class TestBuiltInConverters(unittest.TestCase):
         sct_payload = helper.run(self.data)
         self.assertTrue(sct_payload['correct'])
 
+class TestSCTImport(unittest.TestCase):
+    def test_sct_import(self):
+        self.data = {
+            "DC_PEC": """class C: pass\nc = C()\nc.a = 1""",
+            "DC_SOLUTION": "",
+            "DC_CODE": "",
+            "DC_SCT": """
+import pandas as pd
+
+def my_converter(x):
+    return x.a
+
+set_converter('__main__.C', my_converter)
+test_object('c')
+"""
+        }
+
+        sct_payload = helper.run(self.data)
+        self.assertTrue(sct_payload['correct'])
 
 
 if __name__ == "__main__":

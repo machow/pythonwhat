@@ -321,7 +321,7 @@ Ex().check_function_def('my_fun').call("f(1, 2)", test="output", pre_code="x = 1
 ```
 
 ```eval_rst
-.. managing-processes:
+.. _managing-processes:
 ```
 
 

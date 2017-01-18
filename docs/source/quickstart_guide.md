@@ -62,5 +62,5 @@ Test functions in pythonwhat are broken into 4 groups:
 
 * [Simple tests](simple_tests/index.rst): look at, e.g., the output produced by an entire code submission.
 * [Part checks](part_checks.rst): focus on specific pieces of code, like a particular for loop.
-* [Expression tests](expression_tests.md): combined with part checks, these run pieces of code and evaluate the outcome.
+* [Expression tests](expression_tests.html#managing-processes): combined with part checks, these run pieces of code and evaluate the outcome.
 * [Logic tests](logic_tests/index.rst): these allow logic like an or statement to be used with SCTs.

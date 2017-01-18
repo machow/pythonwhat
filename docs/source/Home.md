@@ -36,8 +36,7 @@ To get started, make sure to check out the [Quickstart Guide](quickstart_guide.m
 
 To robustly test the equality of objects, and results of evaluations, it has to fetch the information from the respective processes, i.e. the student and solution processes. By default, this is done through a process of 'dilling' and 'undilling', but it's also possible to define your own converters to customize the way objects and results are compared. For more background on this, check out 
 
-```:ref:`managing-processes` 
-```
+```:ref:`managing-processes` ```
 
 For some more background on the principle of 'sub-SCTs', i.e. sets of tests to be called on a particular part or a particular state of a student's submission, have a look at the [Part Checks article](part_checks.rst).
 
